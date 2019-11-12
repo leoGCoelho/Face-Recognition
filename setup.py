@@ -4,6 +4,7 @@ print('\nVeryfing and installing dependences...\n')
 os.system("pip3 install numpy")
 os.system("pip3 install opencv-python")
 os.system("pip3 install Pillow")
+os.system("results")
 os.system("clear")
 print('All dependences updated!\n')
 
