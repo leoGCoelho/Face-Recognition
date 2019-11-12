@@ -1,5 +1,5 @@
 # Face-Recognition
-en/US | <a href="https://github.com/leoGCoelho/Face-Recognition/blob/master/README-PT.md">pt/BR</a>
+#### en/US | <a href="https://github.com/leoGCoelho/Face-Recognition/blob/master/README-PT.md">pt/BR</a>
 
 ### Resume
 A face recognition system using supervised learning (OpenCV + NumPy), analizing images sets and the recorded on the webcam. 

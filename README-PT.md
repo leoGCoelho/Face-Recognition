@@ -1,5 +1,5 @@
 # Reconhecimento Facial
-pt/BR | <a href="https://github.com/leoGCoelho/Face-Recognition/blob/master/README.md">en/US</a>
+#### pt/BR | <a href="https://github.com/leoGCoelho/Face-Recognition/blob/master/README.md">en/US</a>
 
 ### Resumo
 Um sistema de reconhecimento facial usando aprendizado supervisionado (OpenCV + NumPy), analizando conjuntos de imagens e o que foi gravado na webcam.
