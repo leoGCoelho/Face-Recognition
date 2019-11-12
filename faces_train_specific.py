@@ -46,7 +46,7 @@ for i in range(len(elem)):
             if file.endswith("png") or file.endswith("jpg"):
                 path = os.path.join(root, file)
                 label = os.path.basename(root).replace(" ", "-").lower()
-                print(label, path)
+                #print(label, path)
                 if not label in label_ids:
                     label_ids[label] = current_id
                     current_id += 1
