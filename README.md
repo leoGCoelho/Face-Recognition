@@ -1,6 +1,8 @@
 # Face-Recognition
+en/US | <a href="https://github.com/leoGCoelho/Face-Recognition/blob/master/README-PT.md">pt/BR</a>
+
 ### Resume
-A face recognition system using supervised learning (OpenCV + NumPy), analizing images set and the recorded on the webcam. 
+A face recognition system using supervised learning (OpenCV + NumPy), analizing images sets and the recorded on the webcam. 
 ### Getting Started
   - Clone Repository;
   - Include (if necessary) more pictures for trainning on the **images** folder, tagging the element folder;
