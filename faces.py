@@ -24,14 +24,14 @@ while(True):
 
     for(x, y, w, h) in faces:
         #========= Coordinates and Region of Interest (regiao de interece)
-        print(x, y, w, h)
+        #print(x, y, w, h)
         rdi_gray = grayframe[y:y+h, x:x+w]      #[Y-start:Y-end, X-start:X-end]
         rdi_color = frame[y:y+h, x:x+w]
 
         #========= Recognizer
         id_, conf = recognizer.predict(rdi_gray)
         if (conf >= 45): # and (conf <= 85):
-            print(id_, labels[id_])
+            #print(id_, labels[id_])
             font = cv2.FONT_HERSHEY_SIMPLEX
             name = labels[id_]
             color = (255, 255, 255)
