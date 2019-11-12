@@ -8,4 +8,4 @@ A face recognition system using supervised learning (OpenCV + NumPy), analizing 
   - With the system trainned, just type `python3 faces.py` on terminal to start the camera;
   - To train the system:
     - Use `python3 faces_train.py` to train with all elements folders;
-    - Or use `python3 faces_train_specify.py "NameFolder1 NameFolder2 ... NameFolderX"` to train with specific element folders;
+    - Or use `python3 faces_train_specific.py "NameFolder1 NameFolder2 ... NameFolderX"` to train with specific element folders;
