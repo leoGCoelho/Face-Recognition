@@ -1,5 +1,5 @@
 import numpy as np
-import cv2
+import cv2, os
 import pickle
 
 #========= HaarCascades
@@ -41,10 +41,8 @@ while(True):
         #========= Results Prints
 
             #====== Image Write
-        g_img_item = "results/img-gray.png"
-        c_img_item = "results/img-color.png"
-        cv2.imwrite(g_img_item, rdi_gray)
-        cv2.imwrite(c_img_item, rdi_color)
+        g_img_item = "img-gray"
+        c_img_item = "img-color"
 
             #====== Image Captor
         color = (0, 255, 0)     # BGR
@@ -58,6 +56,21 @@ while(True):
     if cv2.waitKey(20) & 0xFF == ord('q'):
         break
 
+address = input("What is the element's name:")
+
+if ((os.path.isdir('images/' + address)) == False):
+    os.system("mkdir images/" + address)
+
+i = 1
+while ((os.path.exists("images/" + address + "/" + g_img_item + str(i)))):
+    i += 1
+
+j = 1
+while ((os.path.exists("images/" + address + "/" + c_img_item + str(j)))):
+    j += 1
+
+cv2.imwrite("images/" + address + "/" + g_img_item + str(i) + ".png", rdi_gray)
+cv2.imwrite("images/" + address + "/" + c_img_item + str(j) + ".png", rdi_color)
 
 cap.release()
 cap.destroyAllWindows()
